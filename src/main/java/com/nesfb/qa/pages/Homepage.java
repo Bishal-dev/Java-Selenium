@@ -8,9 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.nesfb.qa.base.TestBase;
 
 public class Homepage extends TestBase{
-	
-	
-	
+		
 	public Homepage() {
 		
 		PageFactory.initElements(driver,this);
@@ -18,19 +16,22 @@ public class Homepage extends TestBase{
 
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	
-	@FindBy(xpath="//button[contains(@class,'show-signout')]")
+	@FindBy(xpath="//strong[contains(text(),'Mr. RANJAN SINGH')]")
 	
-	WebElement Logo;
+	WebElement user;
 	
 	
-	public boolean Banksymbol() {
+	public boolean Accountuser() {
 		
-	return Logo.isDisplayed();
-		
-
-		
+	return user.isDisplayed();
+	}
+	
+	public String verifytitle() {
+				
+		return driver.getTitle();
+	} 
+			
 	}
 	
 	
 	
-}

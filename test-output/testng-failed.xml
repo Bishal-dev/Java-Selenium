@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="none">
-  <listeners>
-    <listener class-name="com.qa.ExtentReportListner.ExtentReportListner"/>
-  </listeners>
-  <test name="Test(failed)" parallel="none" preserve-order="true">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none" preserve-order="true">
     <classes>
-      <class name="com.nesfb.qa.test.LoginPageTest">
+      <class name="com.nesfb.qa.test.OwnAccountTransferTest">
         <methods>
-          <include name="Loginwithpw"/>
-          <include name="LoginTest"/>
-          <include name="setup"/>
+          <include name="NarrationfieldTest"/>
+          <include name="submitbtnTest"/>
+          <include name="AmountfieldTest"/>
+          <include name="FromAccountfieldTest"/>
         </methods>
-      </class> <!-- com.nesfb.qa.test.LoginPageTest -->
-      <class name="com.nesfb.qa.test.HomepageTest">
-        <methods>
-          <include name="banklogotest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.nesfb.qa.test.HomepageTest -->
+      </class> <!-- com.nesfb.qa.test.OwnAccountTransferTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

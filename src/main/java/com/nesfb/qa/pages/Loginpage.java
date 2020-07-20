@@ -13,7 +13,6 @@ import com.nesfb.qa.base.TestBase;
 
 public class Loginpage extends TestBase {
 
-    
 	public Loginpage() throws IOException {
 		
 		PageFactory.initElements(driver, this);
@@ -22,8 +21,6 @@ public class Loginpage extends TestBase {
 	
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	
-	
-
 	@FindBy(name="username")
 	
 	WebElement username;
@@ -32,7 +29,7 @@ public class Loginpage extends TestBase {
 			
      WebElement password;
 	
-	
+		
 	@FindBy(xpath="//button[@type='submit']")
 	
 	WebElement submitbtn1;
@@ -41,7 +38,9 @@ public class Loginpage extends TestBase {
 	
 	WebElement submitbtn2;
     
-    
+    @FindBy(xpath="//span[contains(text(),'Transfers')]")
+	
+	WebElement Transfer;
     
     
     public void login(String un) {
@@ -50,6 +49,7 @@ public class Loginpage extends TestBase {
     	
       	submitbtn1.click();
         }
+
     	
     public Homepage loginwithpw(String pwd) {
 	   
@@ -58,8 +58,14 @@ public class Loginpage extends TestBase {
 	  js.executeScript("arguments[0].click();", submitbtn2);	   
 	   
 	  return new Homepage();
+    }
    		
-    	
+	public void OwnAccount() {
+			
+		js.executeScript("arguments[0].click();", Transfer);
+			
+	  
+	  
     }
    
    

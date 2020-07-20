@@ -5,14 +5,18 @@ package com.nesfb.qa.test;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.nesfb.qa.base.TestBase;
+import com.nesfb.qa.pages.Homepage;
 import com.nesfb.qa.pages.Loginpage;
 
 public class LoginPageTest extends TestBase {
 	
 	public Loginpage ln;
+	public Homepage homepage;
 	
 	public LoginPageTest() throws IOException {
 		
@@ -27,13 +31,12 @@ public class LoginPageTest extends TestBase {
 	
 	}
 		
-	
 	@Test(priority = 3)
 	public void Loginwithpw()
 	
 	{
 		
-		ln.loginwithpw(prop.getProperty("password"));
+	homepage=	ln.loginwithpw(prop.getProperty("password"));
 	
 	}
 	
@@ -44,15 +47,16 @@ public class LoginPageTest extends TestBase {
 		
 		ln.login(prop.getProperty("username"));
 	}
-		
- 
+
+
+  
 	
-	@Test(priority = 4)
+    @Test(priority = 4)
     public void teardown() throws InterruptedException
 
     {
-		Thread.sleep(200);
-         driver.quit();	
+    	Thread.sleep(3000);
+		driver.quit();	
     }
 }
 

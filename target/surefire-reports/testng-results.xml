@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36153" started-at="2020-05-31T13:24:48 IST" finished-at="2020-05-31T13:25:25 IST">
+  <suite name="Suite" duration-ms="28305" started-at="2020-07-20T08:32:22Z" finished-at="2020-07-20T08:32:50Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="36153" started-at="2020-05-31T13:24:48 IST" finished-at="2020-05-31T13:25:25 IST">
-      <class name="com.nesfb.qa.test.HomepageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.nesfb.qa.test.HomepageTest@5f9d02cb]" name="setup" is-config="true" duration-ms="12926" started-at="2020-05-31T13:25:08 IST" finished-at="2020-05-31T13:25:21 IST">
+    <test name="Test" duration-ms="28305" started-at="2020-07-20T08:32:22Z" finished-at="2020-07-20T08:32:50Z">
+      <class name="com.nesfb.qa.test.OwnAccountTransferTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.nesfb.qa.test.OwnAccountTransferTest@6591f517]" name="setup" duration-ms="17540" started-at="2020-07-20T14:02:22Z" finished-at="2020-07-20T14:02:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="banklogotest()[pri:0, instance:com.nesfb.qa.test.HomepageTest@5f9d02cb]" name="banklogotest" duration-ms="2452" started-at="2020-05-31T13:25:21 IST" finished-at="2020-05-31T13:25:24 IST">
+        <test-method status="PASS" signature="AccountTest()[pri:0, instance:com.nesfb.qa.test.OwnAccountTransferTest@6591f517]" name="AccountTest" duration-ms="3091" started-at="2020-07-20T14:02:39Z" finished-at="2020-07-20T14:02:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- banklogotest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.nesfb.qa.test.HomepageTest@5f9d02cb]" name="teardown" is-config="true" duration-ms="753" started-at="2020-05-31T13:25:24 IST" finished-at="2020-05-31T13:25:25 IST">
+        </test-method> <!-- AccountTest -->
+        <test-method status="PASS" signature="OwnAccountTest()[pri:0, instance:com.nesfb.qa.test.OwnAccountTransferTest@6591f517]" name="OwnAccountTest" duration-ms="5099" started-at="2020-07-20T14:02:43Z" finished-at="2020-07-20T14:02:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.nesfb.qa.test.HomepageTest -->
-      <class name="com.nesfb.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:1, instance:com.nesfb.qa.test.LoginPageTest@370736d9]" name="setup" duration-ms="15925" started-at="2020-05-31T13:24:49 IST" finished-at="2020-05-31T13:25:04 IST">
+        </test-method> <!-- OwnAccountTest -->
+        <test-method status="PASS" signature="FromAccountfieldTest()[pri:0, instance:com.nesfb.qa.test.OwnAccountTransferTest@6591f517]" name="FromAccountfieldTest" duration-ms="751" started-at="2020-07-20T14:02:48Z" finished-at="2020-07-20T14:02:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginTest()[pri:2, instance:com.nesfb.qa.test.LoginPageTest@370736d9]" name="LoginTest" duration-ms="1701" started-at="2020-05-31T13:25:05 IST" finished-at="2020-05-31T13:25:06 IST">
+        </test-method> <!-- FromAccountfieldTest -->
+        <test-method status="PASS" signature="AmountfieldTest()[pri:0, instance:com.nesfb.qa.test.OwnAccountTransferTest@6591f517]" name="AmountfieldTest" duration-ms="721" started-at="2020-07-20T14:02:48Z" finished-at="2020-07-20T14:02:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="Loginwithpw()[pri:3, instance:com.nesfb.qa.test.LoginPageTest@370736d9]" name="Loginwithpw" duration-ms="583" started-at="2020-05-31T13:25:06 IST" finished-at="2020-05-31T13:25:07 IST">
+        </test-method> <!-- AmountfieldTest -->
+        <test-method status="PASS" signature="NarrationfieldTest()[pri:0, instance:com.nesfb.qa.test.OwnAccountTransferTest@6591f517]" name="NarrationfieldTest" duration-ms="760" started-at="2020-07-20T14:02:49Z" finished-at="2020-07-20T14:02:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Loginwithpw -->
-        <test-method status="PASS" signature="teardown()[pri:4, instance:com.nesfb.qa.test.LoginPageTest@370736d9]" name="teardown" duration-ms="1460" started-at="2020-05-31T13:25:07 IST" finished-at="2020-05-31T13:25:08 IST">
+        </test-method> <!-- NarrationfieldTest -->
+        <test-method status="PASS" signature="submitbtnTest()[pri:0, instance:com.nesfb.qa.test.OwnAccountTransferTest@6591f517]" name="submitbtnTest" duration-ms="255" started-at="2020-07-20T14:02:50Z" finished-at="2020-07-20T14:02:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.nesfb.qa.test.LoginPageTest -->
+        </test-method> <!-- submitbtnTest -->
+      </class> <!-- com.nesfb.qa.test.OwnAccountTransferTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
