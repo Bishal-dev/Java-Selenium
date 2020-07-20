@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListner.ExtentReportListner"/>
+  </listeners>
   <test name="Test(failed)" parallel="none" preserve-order="true">
     <classes>
       <class name="com.nesfb.qa.test.OwnAccountTransferTest">
         <methods>
-          <include name="NarrationfieldTest"/>
+          <include name="AmountfieldTest"/>
         </methods>
       </class> <!-- com.nesfb.qa.test.OwnAccountTransferTest -->
     </classes>

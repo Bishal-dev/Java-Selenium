@@ -29,27 +29,67 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">26.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">27.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.nesfb.qa.test.OwnAccountTransferTest<td><a href="#m1"><b>AmountfieldTest</b>  </a></td><td class="numi">1</td><td>1595272798424</td><td class="numi">791</td></tr>
 <tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="7">com.nesfb.qa.test.OwnAccountTransferTest<td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1595240103162</td><td class="numi">15756</td></tr><tr class="passedodd"><td><a href="#m2"><b>AccountTest</b>  </a></td><td class="numi">1</td><td>1595240118922</td><td class="numi">3228</td></tr><tr class="passedodd"><td><a href="#m3"><b>OwnAccountTest</b>  </a></td><td class="numi">1</td><td>1595240122154</td><td class="numi">5261</td></tr><tr class="passedodd"><td><a href="#m4"><b>FromAccountfieldTest</b>  </a></td><td class="numi">1</td><td>1595240127415</td><td class="numi">678</td></tr><tr class="passedodd"><td><a href="#m5"><b>AmountfieldTest</b>  </a></td><td class="numi">1</td><td>1595240128098</td><td class="numi">574</td></tr><tr class="passedodd"><td><a href="#m6"><b>NarrationfieldTest</b>  </a></td><td class="numi">1</td><td>1595240128676</td><td class="numi">524</td></tr><tr class="passedodd"><td><a href="#m7"><b>submitbtnTest</b>  </a></td><td class="numi">1</td><td>1595240129202</td><td class="numi">247</td></tr>
+<tr class="passedodd"><td rowspan="6">com.nesfb.qa.test.OwnAccountTransferTest<td><a href="#m2"><b>AccountTest</b>  </a></td><td class="numi">1</td><td>1595272789270</td><td class="numi">3619</td></tr><tr class="passedodd"><td><a href="#m3"><b>FromAccountfieldTest</b>  </a></td><td class="numi">1</td><td>1595272798100</td><td class="numi">316</td></tr><tr class="passedodd"><td><a href="#m4"><b>NarrationfieldTest</b>  </a></td><td class="numi">1</td><td>1595272799231</td><td class="numi">570</td></tr><tr class="passedodd"><td><a href="#m5"><b>OwnAccountTest</b>  </a></td><td class="numi">1</td><td>1595272792897</td><td class="numi">5203</td></tr><tr class="passedodd"><td><a href="#m6"><b>setup</b>  </a></td><td class="numi">1</td><td>1595272772302</td><td class="numi">16964</td></tr><tr class="passedodd"><td><a href="#m7"><b>submitbtnTest</b>  </a></td><td class="numi">1</td><td>1595272799805</td><td class="numi">388</td></tr>
 </table>
 <h1>Test</h1>
-<a id="m1"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:FromAccountfieldTest</h2>
+<a id="m1"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:AmountfieldTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;amount22&apos;]&quot;}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;PC&apos;, ip: &apos;192.168.43.241&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 236fb1ccc0055a166ec6d622cd4b985b
+*** Element info: {Using=xpath, value=//input[@name=&apos;amount22&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+<br/>at com.sun.proxy.$Proxy5.findElement(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+<br/>at com.nesfb.qa.pages.Ownaccounttransfer.Amountfield(Ownaccounttransfer.java:70)
+<br/>at com.nesfb.qa.test.OwnAccountTransferTest.AmountfieldTest(OwnAccountTransferTest.java:76)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:setup</h2>
+<a id="m2"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:AccountTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:OwnAccountTest</h2>
+<a id="m3"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:setup</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:AccountTest</h2>
+<a id="m4"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:NarrationfieldTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:NarrationfieldTest</h2>
+<a id="m5"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:OwnAccountTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m6"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:submitbtnTest</h2>
+<a id="m6"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:FromAccountfieldTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m7"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:AmountfieldTest</h2>
+<a id="m7"></a><h2>com.nesfb.qa.test.OwnAccountTransferTest:submitbtnTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
